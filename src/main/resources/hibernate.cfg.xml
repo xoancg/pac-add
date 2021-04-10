@@ -1,0 +1,22 @@
+<hibernate-configuration>
+    <session-factory>
+        <!--  properties  -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/m06</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <!--         <property name="connection.username">ilerna</property>
+                <property name="connection.password">Ilerna_1234</property> -->
+        <!--  Dialecto SQL  -->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <!--  Muestra en la consola todas las consultas SQL ejecutadas  -->
+        <property name="show_sql">true</property>
+        <!--         Elimina y vuelve a crear el esquema de la base de datos al iniciar
+                    si no quiero que vuelva a crear las tablas, pondremos update  -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <!--         Mapeo de entidades -->
+        <mapping resource="profesor.hbm.xml"/>
+        <mapping resource="alumno.hbm.xml"/>
+        <mapping resource="modulo.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
+        <!--  https://docs.jboss.org/hibernate/stable/core.old/reference/en/html/configuration-xmlconfig.html  -->

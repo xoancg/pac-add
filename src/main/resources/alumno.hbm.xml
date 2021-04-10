@@ -1,0 +1,18 @@
+<hibernate-mapping>
+    <class name="Alumno" table="alumnos" catalog="m06">
+        <id name="id">
+            <column name="idAlumno"/>
+            <generator class="increment"/>
+        </id>
+        <property name="nombre"/>
+        <property name="nacionalidad"/>
+        <property name="edad" type="integer"/>
+        <property name="sexo"/>
+        <set name="modulos" table="alumno_modulo" cascade="all">
+            <key column="idAlumno"/>
+            <many-to-many column="idModulo" class="Modulo"/>
+            <!--             <many-to-many column="idModulo" class="Modulo"/> -->
+        </set>
+    </class>
+</hibernate-mapping>
+        <!--         https://www.tutorialspoint.com/hibernate/hibernate_set_mapping.htm -->

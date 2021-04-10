@@ -1,0 +1,11 @@
+
+<hibernate-mapping>
+    <class name="Profesor" table="profesores" catalog="m06">
+        <id name="id">
+            <column name="idProfesor"/>
+            <generator class="increment"/>
+        </id>
+        <property name="nombre"/>
+        <property name="sexo"/>
+    </class>
+</hibernate-mapping>
