@@ -85,9 +85,9 @@ public class Main {
 
         // Creación de alumnos
 
-        Alumno alumno1 = new Alumno("Juan", "Espanola", 26, "Hombre", set1);
+        Alumno alumno1 = new Alumno("Juan", "Espaniola", 26, "Hombre", set1);
         Alumno alumno2 = new Alumno("Pedro", "Andorrana", 21, "Hombre", set2);
-        Alumno alumno3 = new Alumno("Marta", "Espanola", 19, "Mujer", set3);
+        Alumno alumno3 = new Alumno("Marta", "Espaniola", 19, "Mujer", set3);
         Alumno alumno4 = new Alumno("Juan", "Francesa", 35, "Mujer", set4);
 
         // Creación de alumnos y asignación de módulos
